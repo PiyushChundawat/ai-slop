@@ -1,3 +1,14 @@
+import { QueryClient } from "@tanstack/react-query";
+
+export const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
+
 const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export async function apiRequest(
