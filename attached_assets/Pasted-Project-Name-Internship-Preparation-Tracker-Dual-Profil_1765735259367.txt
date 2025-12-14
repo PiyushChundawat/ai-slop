@@ -1,0 +1,333 @@
+Project Name
+
+Internship Preparation Tracker – Dual Profile Full-Stack App
+
+High-Level Goal
+
+Build a fully working full-stack web application with a persistent database to track internship preparation.
+
+The app must:
+
+Sync across devices
+
+Store historical data
+
+Use a simple dashboard UI (not Notion-style)
+
+Have no authentication
+
+Support two profiles via toggle:
+
+Piyush
+
+Shruti
+
+Each profile has independent persistent data.
+
+Tech Requirements
+
+Full-stack app (frontend + backend)
+
+Persistent database (Replit DB / SQLite / Postgres)
+
+Backend handles all CRUD
+
+No localStorage-only persistence
+
+File uploads supported
+
+Fully runnable and deployable on Replit
+
+UI REQUIREMENTS
+
+Clean dashboard UI
+
+Cards, tables, counters
+
+Simple navigation
+
+Profile toggle at top
+
+No Notion-like grid UI
+
+🔄 GLOBAL FEATURES (COMMON)
+1️⃣ Profile Toggle
+
+Toggle between Piyush ↔ Shruti
+
+Switching profile loads correct data instantly
+
+2️⃣ Top TODO List
+
+Add / edit / delete
+
+Mark complete
+
+Profile-specific storage
+
+3️⃣ 10-Day Habit Tracker
+
+Shows last 10 days
+
+Habits:
+
+DSA
+
+CP
+
+Contest
+
+Revision
+
+Courses
+
+Checkbox per habit per day
+
+Streak and completion %
+
+📅 DAILY LOGS (PROFILE-SPECIFIC)
+4️⃣ Daily Logs – Piyush Profile
+
+Track ONLY DSA questions solved.
+
+Fields:
+
+Date
+
+DSA questions solved (number)
+
+Optional notes
+
+Features:
+
+Add/edit daily entry
+
+View past days
+
+Weekly and total summaries
+
+5️⃣ Daily Logs – Shruti Profile
+
+Track ONLY Python and SQL questions solved.
+
+Fields:
+
+Date
+
+Python questions solved (number)
+
+SQL questions solved (number)
+
+Optional notes
+
+Features:
+
+Add/edit daily entry
+
+View past days
+
+Weekly and total summaries
+
+👤 PROFILE: PIYUSH (TECH / CP / DSA)
+6️⃣ Competitive Programming Dashboard
+Static Contest Schedule
+
+Codeforces Div 4 → Friday 8:05 PM IST
+
+Codeforces Div 3 → Sunday 8:05 PM IST
+
+LeetCode Weekly → Sunday 8:00 AM IST
+
+LeetCode Biweekly → Saturday 8:00 PM IST
+
+CodeChef Starters → Wednesday 8:00 PM IST
+
+7️⃣ Rating Tracker
+
+Editable:
+
+Codeforces Rating
+
+LeetCode Rating
+
+CodeChef Rating
+
+8️⃣ Contest Performance Log
+
+Fields:
+
+Platform
+
+Contest Name
+
+Date
+
+Problems Solved (e.g., 2 / 7)
+
+Notes
+
+9️⃣ DSA Progress Tracker
+🔹 A2Z Striver Sheet
+
+User manually sets totals.
+
+Fields:
+
+Easy Total
+
+Medium Total
+
+Hard Total
+
+Easy Solved
+
+Medium Solved
+
+Hard Solved
+
+Auto-calculate:
+
+Category %
+
+Overall %
+
+🔹 Blind 75 Tracker
+
+Fields:
+
+Question Name
+
+Solution Link (URL)
+
+🔟 Resume Section
+
+Editable:
+
+Work Experience
+
+Skills
+
+Projects
+
+Achievements
+
+1️⃣1️⃣ Courses Tracker
+
+Fields:
+
+Course Name
+
+Platform
+
+Total Content
+
+Completed Content
+
+Progress %
+
+1️⃣2️⃣ Certificates
+
+Upload files
+
+Title
+
+Issuer
+
+Date
+
+👤 PROFILE: SHRUTI (ANALYTICS / SQL / PYTHON)
+6️⃣ Projects Section
+
+Project Name
+
+Description
+
+Personal notes
+
+7️⃣ Skills Section
+
+Skill name
+
+Notes
+
+8️⃣ Courses Section
+
+Same structure as Piyush.
+
+9️⃣ Case Studies Section
+
+Title
+
+Notes
+
+Date
+
+🔟 Guesstimates Section
+
+Topic
+
+Learnings
+
+Notes
+
+1️⃣1️⃣ Case Competitions
+
+Competition name
+
+Notes
+
+Document upload
+
+1️⃣2️⃣ Certificates
+
+Upload certificates
+
+Issuer
+
+Date
+
+DATABASE REQUIREMENTS
+
+Design separate tables for:
+
+profiles
+
+todos
+
+habits
+
+daily_logs_piyush
+
+daily_logs_shruti
+
+cp_ratings
+
+contests
+
+a2z_progress
+
+blind75
+
+courses
+
+certificates
+
+resume_sections
+
+Ensure:
+
+Clean relations
+
+No data leakage between profiles
+
+Persistence across devices
+
+FINAL INSTRUCTIONS
+
+Build end-to-end
+
+Prioritize data correctness
+
+Ensure stable persistence
+
+Deliver a usable daily tracker
